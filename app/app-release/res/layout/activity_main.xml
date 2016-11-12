@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="@dimen/dimen_8dp" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/dimen_8dp" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" cardview:cardCornerRadius="@dimen/dimen_2dp" cardview:cardElevation="@dimen/dimen_4dp" cardview:cardUseCompatPadding="true" xmlns:cardview="http://schemas.android.com/apk/res-auto">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/frameLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/image" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@string/image" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/linearView" android:background="@color/twitter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip">
+                        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layoutButtons" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hilary" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:textColor="@color/grey" android:id="@id/textView" android:paddingLeft="@dimen/dimen_24dp" android:paddingTop="@dimen/dimen_48dp" android:paddingRight="@dimen/dimen_24dp" android:paddingBottom="@dimen/dimen_24dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desc" android:layout_below="@id/frameLayout" android:lineSpacingExtra="@dimen/dimen_4dp" android:fontFamily="sans-serif-light" />
+                <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="italic" android:textColor="@color/grey" android:paddingLeft="@dimen/dimen_24dp" android:paddingTop="@dimen/dimen_24dp" android:paddingRight="@dimen/dimen_24dp" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/italic" android:layout_below="@id/textView" android:fontFamily="sans-serif-medium" />
+                <ImageButton android:id="@id/launchTwitterAnimation" android:background="@drawable/rounded_button" android:layout_width="@dimen/dimen_56dp" android:layout_height="@dimen/dimen_56dp" android:layout_marginBottom="-28.0dip" android:src="@drawable/twitter_logo" android:adjustViewBounds="true" android:layout_alignBottom="@id/frameLayout" android:contentDescription="@string/image" android:elevation="@dimen/dimen_4dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
